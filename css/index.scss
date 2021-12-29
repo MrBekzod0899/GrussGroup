@@ -1,0 +1,426 @@
+/*#193e58 nav  #ffe400 border text-color #eeeff0 back #f2f2f2 text-head #234960*/
+$backcolor: #f2f2f2;
+$textColor: #eeeff0;
+$textHeadColor: #234960;
+$navColor: #193e58;
+$borderColor: #ffe400;
+
+body {
+  margin: 0;
+  padding: 0;
+
+  .navBox {
+    z-index: 2;
+    color: $textColor;
+    background-color: $navColor;
+    padding: 20px 0 50px 0;
+    margin: 0;
+    transform: skew(0deg, -3deg) translateY(-35px);
+    border-bottom: 5px solid $borderColor;
+    display: block;
+
+    .container {
+      margin-top: 30px;
+      box-sizing: border-box;
+      transform: skew(0deg, 3deg);
+    
+      .rightNav {
+        width: 70%;
+
+        ul {
+          width: 100%;
+          margin: 0 !important;
+          padding: 0 !important;
+          text-align: right;
+          display: flex;
+          justify-content: end;
+
+          li {
+            margin-left: 10px;
+            padding-left: 0;
+
+            a {
+              padding: 0;
+              position: relative;
+              margin: 0;
+              font-size: 24px;
+              color: $textColor;
+              display: inline-block;
+            }
+
+            a::after {
+              content: '';
+              width: 0;
+              position: absolute;
+              background-color: white;
+              height: 2px;
+              border-radius: 1px;
+              bottom: 0px;
+              left: 0;
+              transition: all 0.5s linear;
+            }
+          }
+
+          li:hover a::after {
+            width: 100%;
+          }
+
+          li:hover a {
+            color: yellow;
+          }
+        }
+      }
+      .leftNav{
+        .navbar-brand {
+            font-size: 30px;
+        }
+        .navbar-icon{
+          padding-top: 5px;
+        
+        }
+
+      }
+    }
+  }
+
+  .part2 {
+    overflow: hidden;
+    padding-bottom: 100px;
+    transform: skew(0deg, -3deg) translateY(-35px);
+
+    .row {
+      padding-top: 30px;
+      transform: skew(0deg, 3deg);
+      position: relative;
+
+      .col-md-5 {
+        padding: 80px 0 10px 0;
+        padding-left: 100px !important;
+        box-sizing: border-box;
+
+        h3 {
+          color: $textHeadColor;
+          font-size: 30px !important;
+          font-weight: 900;
+        }
+
+        .card {
+          background-color: $navColor !important;
+          width: 300px !important;
+          height: 300px !important;
+          padding: 10px !important;
+          padding-bottom: 20px !important;
+          padding-right: 15px !important;
+          box-sizing: border-box;
+
+          .card-header {
+            width: 100%;
+
+            p {
+              padding: 0;
+              padding-bottom: 5px;
+              margin: 0;
+              font-weight: bold;
+            }
+
+            span {
+              color: $textColor;
+              padding-bottom: 20px !important;
+            }
+
+            input,
+            button {
+              border-radius: 20px;
+            }
+
+            button {
+              background-color: $borderColor !important;
+            }
+          }
+        }
+      }
+
+      .col-md-7 {
+        img {
+          width: 90%;
+          position: absolute;
+          z-index: 3 !important;
+          transform: translate(20px);
+        }
+
+        .road {
+          border: 4px solid $borderColor;
+          position: absolute;
+          border-top-left-radius: 50%;
+          border-bottom-left-radius: 50%;
+          border-bottom-right-radius: 2% !important;
+          top: -100px;
+          right: -10px;
+          width: 70%;
+          height: 550px;
+          background-image: url('../assets/road10.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+  }
+
+  .company {
+    // background-image: url('../assets/Map.jpg');
+    transform: skew(0deg, -3deg) translateY(-35px);
+    background-color: $navColor;
+    border-bottom: 4px solid $borderColor;
+    padding: 100px 50px;
+
+    .row {
+      transform: skew(0deg, 3deg);
+
+      .col-lg-4 {
+        color: $textColor !important;
+        width: 100%;
+        float: right !important;
+
+        h3 {
+          font-size: 30px !important;
+          font-weight: 800;
+        }
+
+        p {
+          i {
+            font-size: 26px;
+            padding-right: 10px;
+            color: $borderColor;
+          }
+
+          span {
+            font-size: 22px;
+          }
+        }
+      }
+
+      .col-lg-8 {
+        color: $textColor;
+
+        h3 {
+          font-weight: 800;
+        }
+
+        button {
+          background-color: $borderColor;
+          border-radius: 20px;
+          width: 200px;
+          padding: 8px;
+          color: $textHeadColor;
+        }
+      }
+    }
+  }
+
+  .cards {
+    transform: skew(0deg, -3deg) translateY(-35px);
+    padding: 80px 0;
+    background-color: $backcolor;
+    // border-bottom: 4px solid $borderColor;
+    overflow: hidden;
+
+    h3 {
+      transform: skew(0deg, 3deg);
+    }
+
+    .row {
+      display: flex;
+      justify-content: center;
+      transform: skew(0deg, 3deg);
+
+      .col-md-3 {
+        z-index: 2;
+        margin: 2px !important;
+        padding: 5px !important;
+
+        .card {
+          padding: 0 !important;
+          margin: 0 !important;
+          border-radius: 10px !important;
+
+          .card-header {
+            padding: 0 !important;
+            margin: 0;
+            border-radius: 10px !important;
+
+            img {
+              height: 100% !important;
+              border-radius: 10px;
+            }
+          }
+
+          .card-body {
+            padding: 5px 10px;
+            margin: 0;
+
+            h4 {
+              font-size: 20px !important;
+              padding: 0;
+              margin: 0;
+            }
+
+            span {
+              font-size: 14px;
+            }
+
+            a {
+              display: block;
+              padding: 10px;
+              padding-left: 0;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      .circle {
+        position: absolute;
+        filter: blur(50px);
+        width: 400px;
+        height: 400px;
+        background-color: $borderColor;
+        border-radius: 50%;
+        bottom: -100px;
+        right: -50px;
+      }
+    }
+  }
+
+  .part3 {
+    background-color: $textHeadColor;
+    overflow: hidden;
+    transform: skew(0deg, -3deg) translateY(-35px);
+    border-bottom: 5px solid $borderColor;
+    border-top: none;
+    padding: 0;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 100px !important;
+    position: relative;
+    height: 500px !important;
+    box-sizing: border-box;
+    .row {
+      transform: skew(0deg, 3deg);
+      .col-md-6{
+        margin-top:10px  !important;
+        padding:10px  0 !important;
+        box-sizing: border-box;
+        color: white;
+        .bBorder{
+          border-bottom: 2px solid white;
+          padding-bottom: 10px;
+          box-sizing: border-box;
+        }
+         .contactItem{
+           padding-top: 10px;
+           box-sizing: border-box;
+           float: left;
+           padding-right: 20px;
+           width: 40%;
+           
+            .contact{
+             width: 100%;
+             padding-bottom: 10px;
+              .contactleft{
+                display: block;
+                width: 20%;
+                float: left;
+                text-align: center;
+                padding-top: 10px;
+                i{
+                  font-size: 26px;
+                  color: $borderColor;
+                }
+              }
+              .contactright{
+              display: block;
+              width: 80%;
+              float: left;   
+              padding-top:5px;  
+              p{
+                text-align: left;
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                font-size: 14px;
+              }
+              span{    
+                box-sizing: border-box;
+              } 
+            }
+            .clear{
+              clear: both;
+            }
+            }
+            .socialLinks{
+              font-size: 20px;
+            }
+         }
+         .location{
+          padding-top: 10px;
+          box-sizing: border-box;
+          width: 50%;
+          height: 200px;
+          float: left;
+           iframe{
+             height: 100%;
+             width: 100%;
+           }
+         }
+
+      }
+      .col-md-6{
+        height: 500px;
+        position: relative;
+        img {
+          width: 65%;
+          position: absolute;
+          z-index: 3 !important;
+          transform: rotateY(180deg) translateX(-200px) translateY(120px);
+        }
+        .road {
+          border: 4px solid $borderColor;
+          position: absolute;
+          height: 110%; 
+          width: 60%;
+          left:-10px;
+          bottom: -10px;
+          right: 0;
+          top:-20px;
+          border-top-right-radius: 90%;
+          border-bottom-right-radius: 90%;
+          background-image: url('../assets/road14.jpg');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        }
+      }
+    }
+  }
+
+}
+
+// @media (max-width: 992px){
+//     body{
+//         .navBox{
+//             .rightNav{
+//                 position: fixed !important;
+//                 top: 0 !important;
+//                 left: 0;
+//                 right: 0;
+//                 bottom: 0;
+//                 width: 100% !important;
+//                 height: 100vh !important;
+//                 background-color: #f1f1f1;
+//                 z-index: 2;
+//             }
+//         }
+      
+//     }
+ 
+// }

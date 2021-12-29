@@ -1,0 +1,440 @@
+/*#193e58 nav  #ffe400 border text-color #eeeff0 back #f2f2f2 text-head #234960*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body .navBox {
+  z-index: 2;
+  color: #eeeff0;
+  background-color: #193e58;
+  padding: 20px 0 50px 0;
+  margin: 0;
+  -webkit-transform: skew(0deg, -3deg) translateY(-35px);
+          transform: skew(0deg, -3deg) translateY(-35px);
+  border-bottom: 5px solid #ffe400;
+  display: block;
+}
+
+body .navBox .container {
+  margin-top: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform: skew(0deg, 3deg);
+          transform: skew(0deg, 3deg);
+}
+
+body .navBox .container .rightNav {
+  width: 70%;
+}
+
+body .navBox .container .rightNav ul {
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+body .navBox .container .rightNav ul li {
+  margin-left: 10px;
+  padding-left: 0;
+}
+
+body .navBox .container .rightNav ul li a {
+  padding: 0;
+  position: relative;
+  margin: 0;
+  font-size: 24px;
+  color: #eeeff0;
+  display: inline-block;
+}
+
+body .navBox .container .rightNav ul li a::after {
+  content: '';
+  width: 0;
+  position: absolute;
+  background-color: white;
+  height: 2px;
+  border-radius: 1px;
+  bottom: 0px;
+  left: 0;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+body .navBox .container .rightNav ul li:hover a::after {
+  width: 100%;
+}
+
+body .navBox .container .rightNav ul li:hover a {
+  color: yellow;
+}
+
+body .navBox .container .leftNav .navbar-brand {
+  font-size: 30px;
+}
+
+body .navBox .container .leftNav .navbar-icon {
+  padding-top: 5px;
+}
+
+body .part2 {
+  overflow: hidden;
+  padding-bottom: 100px;
+  -webkit-transform: skew(0deg, -3deg) translateY(-35px);
+          transform: skew(0deg, -3deg) translateY(-35px);
+}
+
+body .part2 .row {
+  padding-top: 30px;
+  -webkit-transform: skew(0deg, 3deg);
+          transform: skew(0deg, 3deg);
+  position: relative;
+}
+
+body .part2 .row .col-md-5 {
+  padding: 80px 0 10px 0;
+  padding-left: 100px !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .part2 .row .col-md-5 h3 {
+  color: #234960;
+  font-size: 30px !important;
+  font-weight: 900;
+}
+
+body .part2 .row .col-md-5 .card {
+  background-color: #193e58 !important;
+  width: 300px !important;
+  height: 300px !important;
+  padding: 10px !important;
+  padding-bottom: 20px !important;
+  padding-right: 15px !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .part2 .row .col-md-5 .card .card-header {
+  width: 100%;
+}
+
+body .part2 .row .col-md-5 .card .card-header p {
+  padding: 0;
+  padding-bottom: 5px;
+  margin: 0;
+  font-weight: bold;
+}
+
+body .part2 .row .col-md-5 .card .card-header span {
+  color: #eeeff0;
+  padding-bottom: 20px !important;
+}
+
+body .part2 .row .col-md-5 .card .card-header input,
+body .part2 .row .col-md-5 .card .card-header button {
+  border-radius: 20px;
+}
+
+body .part2 .row .col-md-5 .card .card-header button {
+  background-color: #ffe400 !important;
+}
+
+body .part2 .row .col-md-7 img {
+  width: 90%;
+  position: absolute;
+  z-index: 3 !important;
+  -webkit-transform: translate(20px);
+          transform: translate(20px);
+}
+
+body .part2 .row .col-md-7 .road {
+  border: 4px solid #ffe400;
+  position: absolute;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 2% !important;
+  top: -100px;
+  right: -10px;
+  width: 70%;
+  height: 550px;
+  background-image: url("../assets/road10.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .company {
+  -webkit-transform: skew(0deg, -3deg) translateY(-35px);
+          transform: skew(0deg, -3deg) translateY(-35px);
+  background-color: #193e58;
+  border-bottom: 4px solid #ffe400;
+  padding: 100px 50px;
+}
+
+body .company .row {
+  -webkit-transform: skew(0deg, 3deg);
+          transform: skew(0deg, 3deg);
+}
+
+body .company .row .col-lg-4 {
+  color: #eeeff0 !important;
+  width: 100%;
+  float: right !important;
+}
+
+body .company .row .col-lg-4 h3 {
+  font-size: 30px !important;
+  font-weight: 800;
+}
+
+body .company .row .col-lg-4 p i {
+  font-size: 26px;
+  padding-right: 10px;
+  color: #ffe400;
+}
+
+body .company .row .col-lg-4 p span {
+  font-size: 22px;
+}
+
+body .company .row .col-lg-8 {
+  color: #eeeff0;
+}
+
+body .company .row .col-lg-8 h3 {
+  font-weight: 800;
+}
+
+body .company .row .col-lg-8 button {
+  background-color: #ffe400;
+  border-radius: 20px;
+  width: 200px;
+  padding: 8px;
+  color: #234960;
+}
+
+body .cards {
+  -webkit-transform: skew(0deg, -3deg) translateY(-35px);
+          transform: skew(0deg, -3deg) translateY(-35px);
+  padding: 80px 0;
+  background-color: #f2f2f2;
+  overflow: hidden;
+}
+
+body .cards h3 {
+  -webkit-transform: skew(0deg, 3deg);
+          transform: skew(0deg, 3deg);
+}
+
+body .cards .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: skew(0deg, 3deg);
+          transform: skew(0deg, 3deg);
+}
+
+body .cards .row .col-md-3 {
+  z-index: 2;
+  margin: 2px !important;
+  padding: 5px !important;
+}
+
+body .cards .row .col-md-3 .card {
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 10px !important;
+}
+
+body .cards .row .col-md-3 .card .card-header {
+  padding: 0 !important;
+  margin: 0;
+  border-radius: 10px !important;
+}
+
+body .cards .row .col-md-3 .card .card-header img {
+  height: 100% !important;
+  border-radius: 10px;
+}
+
+body .cards .row .col-md-3 .card .card-body {
+  padding: 5px 10px;
+  margin: 0;
+}
+
+body .cards .row .col-md-3 .card .card-body h4 {
+  font-size: 20px !important;
+  padding: 0;
+  margin: 0;
+}
+
+body .cards .row .col-md-3 .card .card-body span {
+  font-size: 14px;
+}
+
+body .cards .row .col-md-3 .card .card-body a {
+  display: block;
+  padding: 10px;
+  padding-left: 0;
+  text-decoration: none;
+}
+
+body .cards .row .circle {
+  position: absolute;
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
+  width: 400px;
+  height: 400px;
+  background-color: #ffe400;
+  border-radius: 50%;
+  bottom: -100px;
+  right: -50px;
+}
+
+body .part3 {
+  background-color: #234960;
+  overflow: hidden;
+  -webkit-transform: skew(0deg, -3deg) translateY(-35px);
+          transform: skew(0deg, -3deg) translateY(-35px);
+  border-bottom: 5px solid #ffe400;
+  border-top: none;
+  padding: 0;
+  margin-right: 0 !important;
+  padding-right: 0 !important;
+  padding-bottom: 100px !important;
+  position: relative;
+  height: 500px !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .part3 .row {
+  -webkit-transform: skew(0deg, 3deg);
+          transform: skew(0deg, 3deg);
+}
+
+body .part3 .row .col-md-6 {
+  margin-top: 10px  !important;
+  padding: 10px  0 !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+}
+
+body .part3 .row .col-md-6 .bBorder {
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .part3 .row .col-md-6 .contactItem {
+  padding-top: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+  padding-right: 20px;
+  width: 40%;
+}
+
+body .part3 .row .col-md-6 .contactItem .contact {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+body .part3 .row .col-md-6 .contactItem .contact .contactleft {
+  display: block;
+  width: 20%;
+  float: left;
+  text-align: center;
+  padding-top: 10px;
+}
+
+body .part3 .row .col-md-6 .contactItem .contact .contactleft i {
+  font-size: 26px;
+  color: #ffe400;
+}
+
+body .part3 .row .col-md-6 .contactItem .contact .contactright {
+  display: block;
+  width: 80%;
+  float: left;
+  padding-top: 5px;
+}
+
+body .part3 .row .col-md-6 .contactItem .contact .contactright p {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 14px;
+}
+
+body .part3 .row .col-md-6 .contactItem .contact .contactright span {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .part3 .row .col-md-6 .contactItem .contact .clear {
+  clear: both;
+}
+
+body .part3 .row .col-md-6 .contactItem .socialLinks {
+  font-size: 20px;
+}
+
+body .part3 .row .col-md-6 .location {
+  padding-top: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 50%;
+  height: 200px;
+  float: left;
+}
+
+body .part3 .row .col-md-6 .location iframe {
+  height: 100%;
+  width: 100%;
+}
+
+body .part3 .row .col-md-6 {
+  height: 500px;
+  position: relative;
+}
+
+body .part3 .row .col-md-6 img {
+  width: 65%;
+  position: absolute;
+  z-index: 3 !important;
+  -webkit-transform: rotateY(180deg) translateX(-200px) translateY(120px);
+          transform: rotateY(180deg) translateX(-200px) translateY(120px);
+}
+
+body .part3 .row .col-md-6 .road {
+  border: 4px solid #ffe400;
+  position: absolute;
+  height: 110%;
+  width: 60%;
+  left: -10px;
+  bottom: -10px;
+  right: 0;
+  top: -20px;
+  border-top-right-radius: 90%;
+  border-bottom-right-radius: 90%;
+  background-image: url("../assets/road14.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/*# sourceMappingURL=index.css.map */
